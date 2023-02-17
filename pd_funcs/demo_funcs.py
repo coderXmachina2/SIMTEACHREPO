@@ -263,7 +263,8 @@ def confidence_level_numerical(input_data, confl, verbose=False):
 
     # Print the results
     if(verbose):
-        print("The confidence interval of the population mean",x_bar," is", lower_bound,"and",upper_bound,
+        print("The confidence interval of the population mean", np.round(x_bar, 4)," is", 
+              np.round(lower_bound,4),"and", np.round(upper_bound,4),
              "given a condfidence level of:", confidence_level)
     
     #print("The 95% confidence interval for the mean Houshold income is",lower_bound,"and",upper_bound)
